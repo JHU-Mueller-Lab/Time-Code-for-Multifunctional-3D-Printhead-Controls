@@ -1,0 +1,424 @@
+
+;------------Set Pressures------------
+serialPort1.write(b'\x05\x02\x30\x38\x50\x53\x20\x20\x30\x32\x31\x30\x46\x32\x03')
+serialPort3.write(b'\x05\x02\x30\x38\x50\x53\x20\x20\x30\x32\x31\x30\x46\x32\x03')
+serialPort1.write(b'\x05\x02\x30\x34\x44\x49\x20\x20\x43\x46\x03')
+serialPort3.write(b'\x05\x02\x30\x34\x44\x49\x20\x20\x43\x46\x03')
+{aux_command}WAGO_ValveCommands(4, True)
+G1 X3
+{aux_command}WAGO_ValveCommands(5, True)
+{aux_command}WAGO_ValveCommands(4, False)
+G1 X3
+{aux_command}WAGO_ValveCommands(4, True)
+{aux_command}WAGO_ValveCommands(5, False)
+G1 X3
+{aux_command}WAGO_ValveCommands(5, True)
+{aux_command}WAGO_ValveCommands(4, False)
+G1 X3
+{aux_command}WAGO_ValveCommands(4, True)
+{aux_command}WAGO_ValveCommands(5, False)
+G1 X3
+{aux_command}WAGO_ValveCommands(5, True)
+{aux_command}WAGO_ValveCommands(4, False)
+G1 X3
+{aux_command}WAGO_ValveCommands(4, True)
+{aux_command}WAGO_ValveCommands(5, False)
+G1 X3
+G1 X10
+;--------------
+{aux_command}WAGO_ValveCommands(5, True)
+{aux_command}WAGO_ValveCommands(4, False)
+G1 X10
+;--------------
+{aux_command}WAGO_ValveCommands(4, True)
+{aux_command}WAGO_ValveCommands(5, False)
+G1 X10
+;--------------
+
+G1 Y1
+G1 X-10
+;--------------
+{aux_command}WAGO_ValveCommands(5, True)
+{aux_command}WAGO_ValveCommands(4, False)
+G1 X-10
+;--------------
+{aux_command}WAGO_ValveCommands(4, True)
+{aux_command}WAGO_ValveCommands(5, False)
+G1 X-10
+;--------------
+
+G1 Y1
+------------- new line -------------------
+G1 X10
+;--------------
+{aux_command}WAGO_ValveCommands(5, True)
+{aux_command}WAGO_ValveCommands(4, False)
+G1 X10
+;--------------
+{aux_command}WAGO_ValveCommands(4, True)
+{aux_command}WAGO_ValveCommands(5, False)
+G1 X10
+;--------------
+
+G1 Y1
+------------- new line -------------------
+G1 X-10
+;--------------
+{aux_command}WAGO_ValveCommands(5, True)
+{aux_command}WAGO_ValveCommands(4, False)
+G1 X-10
+;--------------
+{aux_command}WAGO_ValveCommands(4, True)
+{aux_command}WAGO_ValveCommands(5, False)
+G1 X-10
+;--------------
+
+G1 Y1
+------------- new line -------------------
+G1 X10
+;--------------
+{aux_command}WAGO_ValveCommands(5, True)
+{aux_command}WAGO_ValveCommands(4, False)
+G1 X10
+;--------------
+{aux_command}WAGO_ValveCommands(4, True)
+{aux_command}WAGO_ValveCommands(5, False)
+G1 X10
+;--------------
+
+G1 Y1
+------------- new line -------------------
+G1 X-10
+;--------------
+{aux_command}WAGO_ValveCommands(5, True)
+{aux_command}WAGO_ValveCommands(4, False)
+G1 X-10
+;--------------
+{aux_command}WAGO_ValveCommands(4, True)
+{aux_command}WAGO_ValveCommands(5, False)
+G1 X-10
+;--------------
+
+G1 Y1
+------------- new line -------------------
+G1 X10
+;--------------
+{aux_command}WAGO_ValveCommands(5, True)
+{aux_command}WAGO_ValveCommands(4, False)
+G1 X10
+;--------------
+{aux_command}WAGO_ValveCommands(4, True)
+{aux_command}WAGO_ValveCommands(5, False)
+G1 X10
+;--------------
+
+G1 Y1
+------------- new line -------------------
+G1 X-10
+;--------------
+{aux_command}WAGO_ValveCommands(5, True)
+{aux_command}WAGO_ValveCommands(4, False)
+G1 X-10
+;--------------
+{aux_command}WAGO_ValveCommands(4, True)
+{aux_command}WAGO_ValveCommands(5, False)
+G1 X-10
+;--------------
+
+G1 Y1
+------------- new line -------------------
+G1 X10
+;--------------
+{aux_command}WAGO_ValveCommands(5, True)
+{aux_command}WAGO_ValveCommands(4, False)
+G1 X10
+;--------------
+{aux_command}WAGO_ValveCommands(4, True)
+{aux_command}WAGO_ValveCommands(5, False)
+G1 X10
+;--------------
+
+G1 Y1
+------------- new line -------------------
+G1 X-10
+;--------------
+{aux_command}WAGO_ValveCommands(5, True)
+{aux_command}WAGO_ValveCommands(4, False)
+G1 X-10
+;--------------
+{aux_command}WAGO_ValveCommands(4, True)
+{aux_command}WAGO_ValveCommands(5, False)
+G1 X-10
+;--------------
+
+G1 Y1
+;--------------------------------- new row --------------------------------
+{aux_command}WAGO_ValveCommands(5, True)
+{aux_command}WAGO_ValveCommands(4, False)
+------------- new line -------------------
+G1 X10
+;--------------
+{aux_command}WAGO_ValveCommands(4, True)
+{aux_command}WAGO_ValveCommands(5, False)
+G1 X10
+;--------------
+{aux_command}WAGO_ValveCommands(5, True)
+{aux_command}WAGO_ValveCommands(4, False)
+G1 X10
+;--------------
+
+G1 Y1
+------------- new line -------------------
+G1 X-10
+;--------------
+{aux_command}WAGO_ValveCommands(4, True)
+{aux_command}WAGO_ValveCommands(5, False)
+G1 X-10
+;--------------
+{aux_command}WAGO_ValveCommands(5, True)
+{aux_command}WAGO_ValveCommands(4, False)
+G1 X-10
+;--------------
+
+G1 Y1
+------------- new line -------------------
+G1 X10
+;--------------
+{aux_command}WAGO_ValveCommands(4, True)
+{aux_command}WAGO_ValveCommands(5, False)
+G1 X10
+;--------------
+{aux_command}WAGO_ValveCommands(5, True)
+{aux_command}WAGO_ValveCommands(4, False)
+G1 X10
+;--------------
+
+G1 Y1
+------------- new line -------------------
+G1 X-10
+;--------------
+{aux_command}WAGO_ValveCommands(4, True)
+{aux_command}WAGO_ValveCommands(5, False)
+G1 X-10
+;--------------
+{aux_command}WAGO_ValveCommands(5, True)
+{aux_command}WAGO_ValveCommands(4, False)
+G1 X-10
+;--------------
+
+G1 Y1
+------------- new line -------------------
+G1 X10
+;--------------
+{aux_command}WAGO_ValveCommands(4, True)
+{aux_command}WAGO_ValveCommands(5, False)
+G1 X10
+;--------------
+{aux_command}WAGO_ValveCommands(5, True)
+{aux_command}WAGO_ValveCommands(4, False)
+G1 X10
+;--------------
+
+G1 Y1
+------------- new line -------------------
+G1 X-10
+;--------------
+{aux_command}WAGO_ValveCommands(4, True)
+{aux_command}WAGO_ValveCommands(5, False)
+G1 X-10
+;--------------
+{aux_command}WAGO_ValveCommands(5, True)
+{aux_command}WAGO_ValveCommands(4, False)
+G1 X-10
+;--------------
+
+G1 Y1
+------------- new line -------------------
+G1 X10
+;--------------
+{aux_command}WAGO_ValveCommands(4, True)
+{aux_command}WAGO_ValveCommands(5, False)
+G1 X10
+;--------------
+{aux_command}WAGO_ValveCommands(5, True)
+{aux_command}WAGO_ValveCommands(4, False)
+G1 X10
+;--------------
+
+G1 Y1
+------------- new line -------------------
+G1 X-10
+;--------------
+{aux_command}WAGO_ValveCommands(4, True)
+{aux_command}WAGO_ValveCommands(5, False)
+G1 X-10
+;--------------
+{aux_command}WAGO_ValveCommands(5, True)
+{aux_command}WAGO_ValveCommands(4, False)
+G1 X-10
+;--------------
+
+G1 Y1
+------------- new line -------------------
+G1 X10
+;--------------
+{aux_command}WAGO_ValveCommands(4, True)
+{aux_command}WAGO_ValveCommands(5, False)
+G1 X10
+;--------------
+{aux_command}WAGO_ValveCommands(5, True)
+{aux_command}WAGO_ValveCommands(4, False)
+G1 X10
+;--------------
+
+G1 Y1
+------------- new line -------------------
+G1 X-10
+;--------------
+{aux_command}WAGO_ValveCommands(4, True)
+{aux_command}WAGO_ValveCommands(5, False)
+G1 X-10
+;--------------
+{aux_command}WAGO_ValveCommands(5, True)
+{aux_command}WAGO_ValveCommands(4, False)
+G1 X-10
+;--------------
+
+G1 Y1
+;--------------------------------- new row --------------------------------
+{aux_command}WAGO_ValveCommands(4, True)
+{aux_command}WAGO_ValveCommands(5, False)
+------------- new line -------------------
+G1 X10
+;--------------
+{aux_command}WAGO_ValveCommands(5, True)
+{aux_command}WAGO_ValveCommands(4, False)
+G1 X10
+;--------------
+{aux_command}WAGO_ValveCommands(4, True)
+{aux_command}WAGO_ValveCommands(5, False)
+G1 X10
+;--------------
+
+G1 Y1
+------------- new line -------------------
+G1 X-10
+;--------------
+{aux_command}WAGO_ValveCommands(5, True)
+{aux_command}WAGO_ValveCommands(4, False)
+G1 X-10
+;--------------
+{aux_command}WAGO_ValveCommands(4, True)
+{aux_command}WAGO_ValveCommands(5, False)
+G1 X-10
+;--------------
+
+G1 Y1
+------------- new line -------------------
+G1 X10
+;--------------
+{aux_command}WAGO_ValveCommands(5, True)
+{aux_command}WAGO_ValveCommands(4, False)
+G1 X10
+;--------------
+{aux_command}WAGO_ValveCommands(4, True)
+{aux_command}WAGO_ValveCommands(5, False)
+G1 X10
+;--------------
+
+G1 Y1
+------------- new line -------------------
+G1 X-10
+;--------------
+{aux_command}WAGO_ValveCommands(5, True)
+{aux_command}WAGO_ValveCommands(4, False)
+G1 X-10
+;--------------
+{aux_command}WAGO_ValveCommands(4, True)
+{aux_command}WAGO_ValveCommands(5, False)
+G1 X-10
+;--------------
+
+G1 Y1
+------------- new line -------------------
+G1 X10
+;--------------
+{aux_command}WAGO_ValveCommands(5, True)
+{aux_command}WAGO_ValveCommands(4, False)
+G1 X10
+;--------------
+{aux_command}WAGO_ValveCommands(4, True)
+{aux_command}WAGO_ValveCommands(5, False)
+G1 X10
+;--------------
+
+G1 Y1
+------------- new line -------------------
+G1 X-10
+;--------------
+{aux_command}WAGO_ValveCommands(5, True)
+{aux_command}WAGO_ValveCommands(4, False)
+G1 X-10
+;--------------
+{aux_command}WAGO_ValveCommands(4, True)
+{aux_command}WAGO_ValveCommands(5, False)
+G1 X-10
+;--------------
+
+G1 Y1
+------------- new line -------------------
+G1 X10
+;--------------
+{aux_command}WAGO_ValveCommands(5, True)
+{aux_command}WAGO_ValveCommands(4, False)
+G1 X10
+;--------------
+{aux_command}WAGO_ValveCommands(4, True)
+{aux_command}WAGO_ValveCommands(5, False)
+G1 X10
+;--------------
+
+G1 Y1
+------------- new line -------------------
+G1 X-10
+;--------------
+{aux_command}WAGO_ValveCommands(5, True)
+{aux_command}WAGO_ValveCommands(4, False)
+G1 X-10
+;--------------
+{aux_command}WAGO_ValveCommands(4, True)
+{aux_command}WAGO_ValveCommands(5, False)
+G1 X-10
+;--------------
+
+G1 Y1
+------------- new line -------------------
+G1 X10
+;--------------
+{aux_command}WAGO_ValveCommands(5, True)
+{aux_command}WAGO_ValveCommands(4, False)
+G1 X10
+;--------------
+{aux_command}WAGO_ValveCommands(4, True)
+{aux_command}WAGO_ValveCommands(5, False)
+G1 X10
+;--------------
+
+G1 Y1
+------------- new line -------------------
+G1 X-10
+;--------------
+{aux_command}WAGO_ValveCommands(5, True)
+{aux_command}WAGO_ValveCommands(4, False)
+G1 X-10
+;--------------
+{aux_command}WAGO_ValveCommands(4, True)
+{aux_command}WAGO_ValveCommands(5, False)
+G1 X-10
+G1 X-10
+;--------------
+{aux_command}WAGO_ValveCommands(4, False)
+{aux_command}WAGO_ValveCommands(4, False)
+{aux_command}WAGO_ValveCommands(5, False)
+serialPort1.write(b'\x05\x02\x30\x34\x44\x49\x20\x20\x43\x46\x03')
+serialPort3.write(b'\x05\x02\x30\x34\x44\x49\x20\x20\x43\x46\x03')

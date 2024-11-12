@@ -1,0 +1,149 @@
+var $clientSocket as handle
+$clientSocket = SocketTcpClientCreate ("127.0.0.1", 65432, 1000)  // host ("127.0.0.1") and port (65432) are defined in the python server script
+if SocketTcpClientIsConnected ($clientSocket)
+	// the client is still connected.
+end
+
+G71
+G76
+G91 // G90 = absolute, G91 = relative
+G68
+Enable([X, Y, D])
+Home([D])
+
+G90
+G0 X0 Y0 D0
+G91
+
+G16 X Y D
+G17
+
+// Begin Motion
+G0 X100 Y100
+G0 D-99.2
+G1 F10
+
+
+SocketWriteString($clientSocket, "START")
+
+
+Dwell(3)
+
+G1 X51.0 
+G1 Y1.0 
+SocketWriteString($clientSocket, "PING")
+G1 X-30.0 
+SocketWriteString($clientSocket, "PING")
+G1 Y1.0 
+SocketWriteString($clientSocket, "PING")
+G1 X30.0 
+SocketWriteString($clientSocket, "PING")
+G1 Y1.0 
+SocketWriteString($clientSocket, "PING")
+G1 X-30.0 
+SocketWriteString($clientSocket, "PING")
+G1 Y1.0 
+SocketWriteString($clientSocket, "PING")
+G1 X30.0 
+SocketWriteString($clientSocket, "PING")
+G1 Y1.0 
+SocketWriteString($clientSocket, "PING")
+G1 X-30.0 
+SocketWriteString($clientSocket, "PING")
+G1 Y1.0 
+SocketWriteString($clientSocket, "PING")
+G1 X30.0 
+SocketWriteString($clientSocket, "PING")
+G1 Y1.0 
+SocketWriteString($clientSocket, "PING")
+G1 X-30.0 
+SocketWriteString($clientSocket, "PING")
+G1 Y1.0 
+SocketWriteString($clientSocket, "PING")
+G1 X30.0 
+SocketWriteString($clientSocket, "PING")
+G1 Y1.0 
+SocketWriteString($clientSocket, "PING")
+G1 X-30.0 
+SocketWriteString($clientSocket, "PING")
+G1 Y1.0 
+SocketWriteString($clientSocket, "PING")
+G1 X30.0 
+SocketWriteString($clientSocket, "PING")
+G1 Y1.0 
+SocketWriteString($clientSocket, "PING")
+G1 X-30.0 
+SocketWriteString($clientSocket, "PING")
+G1 Y1.0 
+SocketWriteString($clientSocket, "PING")
+G1 X30.0 
+SocketWriteString($clientSocket, "PING")
+G1 Y1.0 
+SocketWriteString($clientSocket, "PING")
+G1 X-30.0 
+SocketWriteString($clientSocket, "PING")
+G1 Y1.0 
+SocketWriteString($clientSocket, "PING")
+G1 X30.0 
+SocketWriteString($clientSocket, "PING")
+G1 Y1.0 
+SocketWriteString($clientSocket, "PING")
+G1 X-30.0 
+SocketWriteString($clientSocket, "PING")
+G1 Y1.0 
+SocketWriteString($clientSocket, "PING")
+G1 X30.0 
+SocketWriteString($clientSocket, "PING")
+G1 Y1.0 
+SocketWriteString($clientSocket, "PING")
+G1 X-30.0 
+SocketWriteString($clientSocket, "PING")
+G1 Y1.0 
+SocketWriteString($clientSocket, "PING")
+G1 X30.0 
+SocketWriteString($clientSocket, "PING")
+G1 Y1.0 
+SocketWriteString($clientSocket, "PING")
+G1 X-30.0 
+SocketWriteString($clientSocket, "PING")
+G1 Y1.0 
+SocketWriteString($clientSocket, "PING")
+G1 X30.0 
+SocketWriteString($clientSocket, "PING")
+G1 Y1.0 
+SocketWriteString($clientSocket, "PING")
+G1 X-30.0 
+SocketWriteString($clientSocket, "PING")
+G1 Y1.0 
+SocketWriteString($clientSocket, "PING")
+G1 X30.0 
+SocketWriteString($clientSocket, "PING")
+G1 Y1.0 
+SocketWriteString($clientSocket, "PING")
+G1 X-30.0 
+SocketWriteString($clientSocket, "PING")
+G1 Y1.0 
+SocketWriteString($clientSocket, "PING")
+G1 X30.0 
+SocketWriteString($clientSocket, "PING")
+G1 Y1.0 
+SocketWriteString($clientSocket, "PING")
+G1 X-30.0 
+SocketWriteString($clientSocket, "PING")
+G1 Y1.0 
+SocketWriteString($clientSocket, "PING")
+G1 X30.0 
+SocketWriteString($clientSocket, "PING")
+G1 Y1.0 
+SocketWriteString($clientSocket, "PING")
+G1 X-30.0 
+SocketWriteString($clientSocket, "PING")
+G1 Y1.0 
+SocketWriteString($clientSocket, "PING")
+G1 X30.0 
+SocketWriteString($clientSocket, "PING")
+G1 Y1.0 
+SocketWriteString($clientSocket, "PING")
+G1 X-40.0 
+Dwell(5)
+Home([D])
